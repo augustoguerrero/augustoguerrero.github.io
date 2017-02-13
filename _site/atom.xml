@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>Augusto Guerrero</title>
+ <link href="http://localhost:4000/atom.xml" rel="self"/>
+ <link href="http://localhost:4000/"/>
+ <updated>2017-02-13T01:56:37-03:00</updated>
+ <id>http://localhost:4000</id>
+ <author>
+   <name>mdslektr</name>
+   <email>augusto.codex@gmail.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>Introduction</title>
+   <link href="http://localhost:4000/2017/02/13/initial-commit/"/>
+   <updated>2017-02-13T00:00:00-03:00</updated>
+   <id>http://localhost:4000/2017/02/13/initial-commit</id>
+   <content type="html">&lt;p&gt;I mean, post.&lt;/p&gt;
+
+&lt;p&gt;It’s been a while since I wanted to have a static page site with my info and some work on it.
+Then I find Jekyll, and github pages, wich both are fantastic.&lt;/p&gt;
+</content>
+ </entry>
+ 
+
+</feed>
