@@ -19,13 +19,13 @@
         {% if page.title == "Contact" %}
           <img class="faded" src="/public/logo-100px-orange.png">
         {% endif %}
-        {% if page.title == "First commit" %}
+        {% if page.url contains "2017" %} <!-- change every year!!! -->
           <img class="faded" src="/public/logo-100px-red.png">
         {% endif %}
         </a>
         <!-- <small>{{ site.tagline }}</small> -->
         <div class="header">
-          <ul class="nav nav-pills pull-right centered">
+          <ul class="nav nav-pills pull-right">
             <li class="passive"><a href="/notes">Notes</a></li>
             <li class="passive"><a href="/cv">CV</a></li>
             <li class="passive"><a href="/contact">Contact</a></li>
@@ -39,7 +39,7 @@
 
       <footer class="footer">
         <small>
-          &copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time>. Guerrero - All rights reserved.
+          &copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time>. Guerrero - All rights reserved. <i class="fa fa-rss pull-right"><a href="/atom.xml"> RSS</a></i>
         </small>
       </footer>
     </div>
