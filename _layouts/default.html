@@ -5,32 +5,29 @@
 
   <body>
     <div class="container content">
-      <header class="masthead">
+      <header class="header masthead">
         <a class="masthead-title pull-left" href="{{ site.baseurl }}/" title="Home">
-        {% if page.title == "Home" %}
-          <img class="faded" src="/public/logo-100px-blue.png">
-        {% endif %}
-        {% if page.title == "Notes" %}
-          <img class="faded" src="/public/logo-100px-green.png">
-        {% endif %}
-        {% if page.title == "Augusto Guerrero" %}
-          <img class="faded" src="/public/logo-100px-purple.png">
-        {% endif %}
-        {% if page.title == "Contact" %}
-          <img class="faded" src="/public/logo-100px-orange.png">
-        {% endif %}
-        {% if page.url contains "2017" %} <!-- change every year!!! -->
-          <img class="faded" src="/public/logo-100px-red.png">
-        {% endif %}
+          {% if page.title == "Home" %}
+            <img class="faded resize" src="/public/logo-75px-blue.png">
+          {% endif %}
+          {% if page.title == "Notes" %}
+            <img class="faded resize" src="/public/logo-75px-green.png">
+          {% endif %}
+          {% if page.title == "Augusto Guerrero" %}
+            <img class="faded resize" src="/public/logo-75px-purple.png">
+          {% endif %}
+          {% if page.title == "Contact" %}
+            <img class="faded resize" src="/public/logo-75px-orange.png">
+          {% endif %}
+          {% if page.url contains "2017" %} <!-- change every year!!! -->
+            <img class="faded resize" src="/public/logo-75px-red.png">
+          {% endif %}
         </a>
-        <!-- <small>{{ site.tagline }}</small> -->
-        <div class="header">
-          <ul class="nav nav-pills pull-right">
-            <li class="passive"><a href="/notes">Notes</a></li>
-            <li class="passive"><a href="/cv">CV</a></li>
-            <li class="passive"><a href="/contact">Contact</a></li>
-          </ul>
-        </div>
+        <ul class="nav nav-pills pull-right">
+          <li class="passive"><a href="/notes">Notes</a></li>
+          <li class="passive"><a href="/cv">CV</a></li>
+          <li class="passive"><a href="/contact">Contact</a></li>
+        </ul>
       </header>
 
       <main>

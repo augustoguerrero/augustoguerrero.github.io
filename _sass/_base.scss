@@ -17,24 +17,12 @@ body {
   padding: 0;
 }
 
-.nav {
-  margin-top: 1.5rem;
-  text-transform: uppercase;
-}
-
 html {
   font-size: $root-font-size;
   line-height: $root-line-height;
   
-  @media only screen and (max-width: 400px) {
-    font-size:30%;
-  }
-  @media only screen and (max-width: 800px) {
-    font-size:75%;
-  }
   @media (min-width: $large-breakpoint) {
     font-size: $large-font-size;
-    .wrap { max-width:770px; }
   }
 }
 
@@ -42,33 +30,73 @@ header {
   font-family: "Montserrat", Helvetica, sans-serif;
   font-size: 20px;
 
-  @media only screen and (max-width: 400px) {
-    font-size:30%;
+  @media (max-width: 400px) and (min-width: 600px) {
+    background-color: red;
+    font-size:100%;
+    img.resize {
+      max-width:30%;
+      max-height:30%;
+    }
   }
-  @media only screen and (max-width: 800px) {
-    font-size:75%;
+
+  @media (max-width: 600px) and (min-width: 800px) {
+    background-color: blue;
+    font-size:100%;
+    img.resize {
+      max-width:50%;
+      max-height:50%;
+    }
+  }
+
+  @media (max-width: 800px) {
+    font-size:100%;
+    img.resize {
+      max-width:75%;
+      max-height:75%;
+    }
   }
 }
 
 body {
-
   font-family: "Merriweather", Georgia, Times;
   font-size: 16px;
   color: $body-color;
   background-color: $body-bg;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
-
-  @media only screen and (max-width: 400px) {
+  
+  @media (max-width: 400px) {
     font-size:30%;
+    img.resize {
+      max-width:30%;
+      max-height:30%;
+    }
   }
-  @media only screen and (max-width: 800px) {
+
+  @media (max-width: 600px) {
+    font-size:50%;
+    img.resize {
+      max-width:50%;
+      max-height:50%;
+    }
+  }
+
+  @media (max-width: 800px) {
     font-size:75%;
+    img.resize {
+      max-width:75%;
+      max-height:75%;
+    }
   }
 }
 
 .marketing {
   margin: 40px 0;
+}
+
+.nav {
+  margin-top: 1.2rem;
+  text-transform: uppercase;
 }
 
 // No `:visited` state is required by default (browsers will use `a`)
@@ -102,7 +130,8 @@ img.faded:hover {
 img {
   display: block;
   max-width: 100%;
-  margin: 0 0 0rem;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
   border-radius: 5px;
 }
 
