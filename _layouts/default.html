@@ -8,19 +8,19 @@
       <header class="header masthead">
         <a class="masthead-title pull-left" href="{{ site.baseurl }}/" title="Home">
           {% if page.title == "Home" %}
-            <img class="faded resize" src="/public/logo-75px-blue.png">
+            <img class="faded resize" id=logo src="/public/logo-75px-blue.png">
           {% endif %}
           {% if page.title == "Notes" %}
-            <img class="faded resize" src="/public/logo-75px-green.png">
+            <img class="faded resize" id="logo" src="/public/logo-75px-green.png">
           {% endif %}
           {% if page.title == "Augusto Guerrero" %}
-            <img class="faded resize" src="/public/logo-75px-purple.png">
+            <img class="faded resize" id="logo" src="/public/logo-75px-purple.png">
           {% endif %}
           {% if page.title == "Contact" %}
-            <img class="faded resize" src="/public/logo-75px-orange.png">
+            <img class="faded resize" id="logo" src="/public/logo-75px-orange.png">
           {% endif %}
           {% if page.url contains "2017" %} <!-- change every year!!! -->
-            <img class="faded resize" src="/public/logo-75px-red.png">
+            <img class="faded resize" id="logo" src="/public/logo-75px-red.png">
           {% endif %}
         </a>
         <ul class="nav nav-pills pull-right">
